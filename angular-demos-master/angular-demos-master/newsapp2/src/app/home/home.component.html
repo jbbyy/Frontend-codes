@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 col-md-4" *ngFor="let x of news">
+      <div class="card" style="width: 18rem">
+        <img src="{{ x.urlToImage }}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ x.title }}</h5>
+          <p class="card-text">
+            {{ x.description }}
+          </p>
+          <a href="#" class="btn btn-primary" (click) = "addFav(x)">Add to favorites</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

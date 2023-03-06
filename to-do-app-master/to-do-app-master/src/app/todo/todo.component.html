@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row mt-3">
+    <div class="col col-md-4 offset-md-4">
+      <div class="input-group input-group-sm">
+        <span class="input-group-text" id="inputGroup-sizing-sm"
+          >Description</span
+        >
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm"
+          [(ngModel)]="list.description"
+        />
+      </div>  
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col col-md-4 offset-md-4">
+      <div class="input-group input-group-sm">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Due Date</span>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm"
+          placeholder="DDMM"
+          [(ngModel)]="list.due"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="row offset-md-4 mt-3">
+    <div class="col col-sm" *ngFor="let x of radio">
+      <input type="radio" name="p" id="{{x}}" value ="{{x}}" [(ngModel)]="list.priority" />
+      <label for="{{x}}" class="m-3">{{x}}</label>
+      
+    </div>
+    <div class="row offset-md-4 mt-3">
+      <div class="col col-sm">
+        <button class="btn btn-success" (click) = add()>submit</button>
+      </div>
+    </div>
+  </div>
+</div>

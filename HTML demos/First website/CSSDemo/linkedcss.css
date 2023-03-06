@@ -1,0 +1,17 @@
+
+
+
+        p
+        {
+            font-family: 'Monotype Corsiva';
+            color:green;
+            font-size : 20pt;
+            background-color: aliceblue;
+            border: 2px solid pink;
+        }
+
+        .parastyle{
+            color: pink;
+            background-color: black;
+        }
+

@@ -1,0 +1,103 @@
+<nav
+  class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark"
+  data-bs-theme="dark"
+>
+  <img src="../assets/pics/pizza-icon.png" alt="" width="100" height="80" />
+
+  <p style="color: beige">HOT PIZZA</p>
+
+  <i
+    style="color: beige"
+    class="fa-solid fa-cart-shopping m-3 float-end"
+    data-bs-toggle="modal"
+    data-bs-target="#exampleModal"
+    (click)="cal()"
+  ></i>
+  <p class="float-end" style="color: beige">{{ cartCount }}</p>
+</nav>
+
+<div class="row m-3">
+  <div class="col-md-4" *ngFor="let x of prodArr">
+    <div class="card" style="width: 18rem">
+      <img src="../../{{ x.image }}" class="card-img-top" alt="" />
+      <div class="card-body">
+        <h2 class="card-title">{{ x.name }}</h2>
+        <span>{{ x.category }}</span>
+        <p class="card-text">{{ x.description }}</p>
+        <h2>{{ x.price }}</h2>
+
+        <button class="btn btn-primary" (click)="addCart(x.id)">
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" tabindex="-1" id="exampleModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">Items in your cart</h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+           <!--(click)="addSCart()"-->
+        </div>
+        <div class="modal-body">
+          <div class="row" *ngFor="let p of cartDisplayArr">
+            <div class="col">
+              {{ p.name }}
+            </div>
+            <div class="col">
+              <button mat-button (click)="decrease(p.id)">-</button
+              ><span>{{ p.quantity }}</span
+              ><button mat-button (click)="increase(p.id)">+</button>
+            </div>
+            <div class="col">
+              {{ p.price * p.quantity }}
+              <i class="fa-solid fa-trash" (click)="delete(p.id)"></i>
+            </div>
+          </div>
+          <img
+            src="../assets/pics/empty-cart.jpg"
+            alt=""
+            *ngIf="cartCount == 0"
+            style="width: 450px; height: 300px"
+          />
+          <ng-container *ngIf="cartCount != 0">
+            <div class="modal-header">
+              <div class="row">
+                <div class="col col-md-4">Total Amount</div>
+                <div class="col col-md-4">${{ amount }}</div>
+              </div>
+            </div>
+            <div class="modal-header">
+              <div class="row">
+                <div class="col col-md-4">GST @ 8%</div>
+                <div class="col col-md-4">{{ gst }}</div>
+              </div>
+            </div>
+            <div class="modal-header">
+              <div class="row">
+                <div class="col">Amount to be paid</div>
+                <div class="col">${{ totalAmount }}</div>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" [disabled]="!cartCount " (click)="addJCart()">
+            
+            <!-- for numbers, if its = 0, will = false so when cartCount=0, cartCount = false, 
+                any other number is true. submit is disabled when true, !(cartCount) aka !(false) -->
+            SUBMIT
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+{
+  "favorites": [
+    {
+      "source": {
+        "id": "the-wall-street-journal",
+        "name": "The Wall Street Journal"
+      },
+      "author": "James Fanelli",
+      "title": "DOJ Seeks to Ban Sam Bankman-Fried From Contacting FTX Employees - The Wall Street Journal",
+      "description": "<ol><li>DOJ Seeks to Ban Sam Bankman-Fried From Contacting FTX Employees  The Wall Street Journal\r\n</li><li>SBF's mom, Caroline Ellison aren't cooperating in bankruptcy probe: lawyers  Markets Insider\r\n</li><li>FTX founder Bankman-Fried objects to tighter bai…",
+      "url": "https://www.wsj.com/articles/doj-seeks-to-ban-sam-bankman-fried-from-contacting-ftx-employees-11674869504",
+      "urlToImage": "https://images.wsj.net/im-712449/social",
+      "publishedAt": "2023-01-28T18:24:00Z",
+      "content": "The Justice Department on Friday asked a federal judge to bar FTX founder Sam Bankman-Fried from communicating with current and former employees of the \r\ncollapsed crypto exchange without a lawyer pr… [+506 chars]",
+      "id": 1
+    },
+    {
+      "source": {
+        "id": "the-wall-street-journal",
+        "name": "The Wall Street Journal"
+      },
+      "author": "Ken Thomas, Catherine Lucey",
+      "title": "Biden Hones Policy Themes for Re-election Effort...",
+      "description": "Biden Hones Policy Themes for Re-election Effort...\r\n\n \n \n \n (First column, 10th story, link)\r\n\n \r\n\n \r\n\n \n Related stories:DeSantis preps presidential run...\r\nDid Miami mayor tease bid?\r\nTrump Tries Small-Scale...\r\nKemp Strongly Positioned?\r\nExpect to See Lot…",
+      "url": "https://www.wsj.com/articles/biden-hones-policy-themes-campaign-plans-for-re-election-effort-11674929241",
+      "urlToImage": "https://images.wsj.net/im-711465/social",
+      "publishedAt": "2023-01-28T18:25:37Z",
+      "content": "WASHINGTONPresident Biden is weeks, perhaps even months, away from a formal announcement on \r\nhis 2024 campaign. But the building blocks of his pursuit of a second-term bid are coming into fuller vie… [+324 chars]",
+      "id": 2
+    },
+    {
+      "source": {
+        "id": "the-wall-street-journal",
+        "name": "The Wall Street Journal"
+      },
+      "author": "Jacob Passy",
+      "title": "At Theme Parks, You Must Be This Tall -- and This Thin -- to Ride...",
+      "description": "A new Mario Kart attraction at Universal Studios Hollywood warns that visitors with large waistlines might not be allowed on board",
+      "url": "https://www.wsj.com/articles/universal-studios-mario-kart-too-big-11674855513",
+      "urlToImage": "https://images.wsj.net/im-711119/social",
+      "publishedAt": "2023-01-28T17:28:37Z",
+      "content": "The newest ride at Universal Studios Hollywood, Mario Kart: Bowsers Challenge, takes visitors into the classic Nintendo game using augmented reality and animatronics. It also warns that they might no… [+285 chars]",
+      "id": 3
+    }
+  ]
+}

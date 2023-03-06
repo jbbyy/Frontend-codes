@@ -1,0 +1,111 @@
+<div class=" d-flex justify-content-center">
+
+<div class="flex-column justify-content-center">
+    <div class="row">
+        <div class="col mt-3" style="text-align:center">
+            <h1><i class="fa-sharp fa-solid fa-coins"></i> Expense Tracker</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-3" style="text-align:center">
+            <h2>Your Balance</h2>
+            <p>{{income - expense}}</p>
+        </div>
+    </div>
+
+
+<div class="row mb-3" style="border:1px dotted black">
+    <div class="col color ms-2">
+        <h3>INCOME</h3>
+        <p>${{income}}</p>
+    </div>
+
+    <div class="col color2">
+        <h3>EXPENSE</h3>
+        <p>${{expense}}</p>
+    </div>
+</div>
+
+<form [formGroup]="trackerForm" (ngSubmit)="add();calculate()">
+<div class="row">
+    <div class="col">
+        <mat-form-field appearance="fill">
+  <mat-label>Enter Description</mat-label>
+  <input formControlName="description" matInput>
+</mat-form-field>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <mat-form-field appearance="fill">
+  <mat-label>Enter Amount</mat-label>
+  <input formControlName="amount" matInput>
+</mat-form-field>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <mat-form-field appearance="fill">
+  <mat-label>DDMMM</mat-label>
+  <input  formControlName="date" matInput>
+</mat-form-field>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+    <mat-radio-group formControlName="val" aria-label="Select an option">
+    <mat-radio-button value="income">Income</mat-radio-button>
+    <mat-radio-button value="expense">Expense</mat-radio-button>
+</mat-radio-group>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col d-flex justify-content-center ">
+        <button class="btn btn-primary mt-3" > Add Transaction</button>
+    </div>
+</div>
+</form>
+
+<ul class="list-group mt-3" style="list-style-type:none;" *ngFor="let x of trackerArr">
+  <li class="list-group-item d-flex justify-content-between align-items-start ">
+    <div class="ms-2 me-auto">
+      
+       <ng-container *ngIf="x.val == 'income'">
+        <div class="row border-green">
+            <div class="col">
+               <p>{{ x.date }} </p>
+            </div>
+            <div class="col">
+            <div class="fw-bold">{{ x.description }}</div>
+            </div>
+            <div class="col align-items-right">
+               
+              <p>+{{ x.amount }} </p>
+              </div>
+              <div class="col">
+                 <span class="badge bg-success rounded-pill float-end" (click)="delete(x.id)">X</span>
+              </div>
+              </div>
+          </ng-container>
+            <ng-container *ngIf="x.val == 'expense'">
+        <div class="row border-red">
+            <div class="col">
+               <p>{{ x.date }} </p>
+            </div>
+            <div class="col">
+            <div class="fw-bold">{{ x.description }}</div>
+            </div>
+            <div class="col align-items-right">
+               <p>-{{ x.amount }} </p>
+              </div>
+              <div class="col">
+                <span class="badge bg-danger rounded-pill float-end" (click)="delete(x.id)">X</span>
+              </div>
+              </div>
+          </ng-container>
+             </div>
+  </li>
+    </ul>
+      

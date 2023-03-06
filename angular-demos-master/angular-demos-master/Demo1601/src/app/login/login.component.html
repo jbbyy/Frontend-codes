@@ -1,0 +1,30 @@
+<div class="input-group mb-3 container">
+  <div class="input-group flex-nowrap" style="width: 300px">
+    <span class="input-group-text" id="addon-wrapping"
+      ><i class="fa-regular fa-envelope"></i
+    ></span>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter Email"
+      aria-label="Username"
+      aria-describedby="addon-wrapping"
+      [(ngModel)]="userInput.email"
+    />
+  </div>
+
+  <div class="input-group flex-nowrap" style="width: 300px">
+    <span class="input-group-text" id="addon-wrapping"
+      ><i class="fa-solid fa-lock"></i
+    ></span>
+    <input
+      type="password"
+      class="form-control"
+      placeholder="Enter Password"
+      aria-label="Username"
+      aria-describedby="addon-wrapping"
+      [(ngModel)]="userInput.password"
+    />
+  </div>
+  <button class="btn btn-success" (click)="getUser()">Login In</button>
+</div>

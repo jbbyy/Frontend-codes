@@ -1,0 +1,338 @@
+.container
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.main{
+    width: 80%;
+    height: 458vh;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    border: 2px solid rgb(141, 132, 132);
+
+}
+
+header{
+    height: 80px;
+    margin-top: 60px;
+}
+header :nth-child(1){
+    padding-right: 60px;
+    text-align: center;
+    font-family: garamond;
+    font-size: 40px;
+    font-style: bold;
+    
+}
+
+.img{
+    width: 215px;
+    height:265px;
+    margin-left :385px;
+    border-radius: 45%;
+}
+
+.img+div{
+    width: 350px;
+    text-align: center;
+    text-align: justify;
+    margin-left: 310px ;
+    font-family: garamond;
+
+}
+
+
+.text{
+    margin-top: -30px;
+    padding-left: 200px;
+    text-align: center;
+    font-family: garamond;
+}
+
+.uul{
+    text-align: center;
+    list-style-type: none;
+    display: block;
+    padding: 30px;
+    margin-top: 0%;
+    
+
+}
+
+.uul li{
+    display: inline;
+    margin-left: 10px;
+    cursor: pointer; 
+    text-decoration: none;
+    color: rgb(76, 74, 84);
+    
+}
+
+
+
+    
+    
+
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.text2{
+    font-family: garamond;
+    font-style: italic;
+    font-size: 40px;
+    margin-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.5fr;
+    
+ 
+}
+
+.grid table{
+    background-color: rgb(177, 210, 199);
+    font-family: garamond;
+    height: 75px;
+    color: rgb(68, 103, 68);
+    font-size: 18px;
+    
+    
+}
+
+
+.grid2{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr;
+    margin-right: 160px;
+}
+
+.grid2 table{
+    background-color: rgba(168, 198, 221, 0.865);
+    font-family: garamond;
+    height: 75px;
+    color: rgb(101, 101, 179);
+    font-size: 18px;
+    
+}
+
+.grid3{
+    display: grid;
+    grid-template-columns:1.5fr 2fr 2fr;
+}
+
+.grid3 table{
+    background-color: rgba(227, 204, 241, 0.865);
+    font-family: garamond;
+    height: 75px;
+    color: purple;
+    font-size: 18px;
+    
+}
+
+.square{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    background-color: rgb(231, 237, 243);
+    height:200px;
+    color: rgb(90, 82, 82);
+    
+}
+
+.text3{
+    padding-top: 160px;
+    font-family: garamond;
+    font-style: italic;
+    font-size: 40px;
+    margin-left: 10px;
+    padding-bottom: 80px;
+
+}
+   
+    
+    .skill1 {
+       background-color: rgb(231, 237, 243);
+        width: 80%;
+        border-radius: 15px;
+        margin-left: 20px;
+        transition: all 1.5s;
+        margin-top: 20px;
+    }
+
+    .skill1:hover{
+        background-color: rgba(254, 252, 255, 0.865);
+        cursor: pointer;
+        
+    }
+    .skill2 {
+        color: rgb(231, 237, 243);
+        padding: 4%;
+        text-align: right;
+        font-size: 20px;
+        border-radius: 12px;
+        transition: all 1.5s;
+    }
+
+    .skill2:hover
+    {
+        background-color:  rgb(159, 203, 188);
+        color: rgb(113, 103, 103);
+    }
+  
+    .range1 {
+        width: 70%;
+    }
+
+    .range2 {
+        width: 75%;
+    }
+
+    .range3 {
+        width: 30%;
+    }
+
+    .square p{
+        margin-top: 40px;
+    }
+
+
+    .soft{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        margin-left: 200px;
+        font-size: 40pt;
+        margin-top: 100px;
+        
+    }
+
+    .containmessage{
+        margin-top: 200px;
+        font-family: garamond;
+        font-size: 25pt;
+          
+
+    }
+.cat{
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+    .containmessage img{
+    width: 310px;
+    height:310px;
+    border-radius: 37%;
+    margin-left: 120px;
+
+    }
+
+.fa-envelope
+    {
+        margin-left: 10px;
+        font-size: 15pt;
+    }
+
+    .center{
+        display:flex;
+        align-items: center;
+        
+    }
+
+    .box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    .box img{
+        width: 220px;
+    height:200px;
+    border-radius: 40%;
+    margin-right: 50px;
+    margin-bottom: 90px;
+    
+
+    }
+
+    .message{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+        
+        
+    }
+
+    .message input{
+        margin-bottom: 10px;
+        border-radius: 45px;
+        border: 2px solid grey;
+        padding: 8px;
+        width: 220px;
+
+    }
+
+    .message :nth-child(4){
+height: 200px;
+    }
+
+    .message :last-child{
+        width: 80px;
+        margin-left: 15px;
+    }
+
+footer{
+    background-color:  rgb(208, 230, 222);
+    width: 100%;
+    height: 126px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.txt{
+    
+    font-family: garamond;
+    padding-top:20px ;
+    color: rgb(89, 95, 99);
+
+}
+
+.txt p:nth-child(1){
+    margin-left: 30px;
+    size: 20pt;
+}
+
+.mini{
+    display: flex;
+    flex-direction: row;
+}
+
+footer i{
+    font-size: 40pt;
+    padding-top: 20px;
+    padding-left: 15px;
+    color: rgb(140, 180, 205);
+}
+
+.mini div i{
+    font-size: 10pt;
+    
+    
+}
+
+
+    

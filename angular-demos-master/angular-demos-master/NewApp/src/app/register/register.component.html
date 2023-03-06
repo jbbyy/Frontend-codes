@@ -1,0 +1,53 @@
+<div class="container d-flex justify-content-center">
+  <div>
+    <div class="row mt-3" style="width: 300px;">
+      <form [formGroup]="registerForm" (ngSubmit)="submit()">
+        <div class="col">
+          <mat-form-field class="example-full-width">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName ="firstname" />
+          </mat-form-field>
+          <div *ngIf ="firstname?.dirty && firstname?.invalid ">First Name required</div>
+        </div>
+        <div class="col">
+          <mat-form-field class="example-full-width">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName ="lastname" />
+          </mat-form-field>
+          <div *ngIf ="lastname?.dirty && lastname?.invalid ">Last Name required</div>
+        </div>
+        <div class="col">
+          <mat-form-field class="example-full-width">
+            <mat-label>City</mat-label>
+            <input matInput formControlName ="city" />
+          </mat-form-field>
+          <div *ngIf ="city?.dirty && city?.invalid ">City required</div>
+        </div>
+        <div class="col">
+          <mat-form-field class="example-full-width">
+            <mat-label>Age</mat-label>
+            <input matInput formControlName ="age" />
+          </mat-form-field>
+          <div *ngIf ="age?.dirty && age?.invalid ">Age required</div>
+        </div>
+        <div class="col">
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName ="email" />
+          </mat-form-field>
+          <div *ngIf ="email?.dirty && email?.invalid ">Email required</div>
+        </div>
+        <div class="col">
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password" />
+          </mat-form-field>
+          <div *ngIf="password?.dirty && password?.invalid">Password required</div>
+        </div>
+        <div class="col">
+            <button class="btn btn-success">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

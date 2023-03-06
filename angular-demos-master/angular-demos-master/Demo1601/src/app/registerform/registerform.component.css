@@ -1,0 +1,15 @@
+
+
+.example-full-width {
+    width: 480px;
+}
+
+.example-nfull-width {
+    width: 480px;
+}
+
+
+
+.mat-mdc-radio-button~.mat-mdc-radio-button {
+    margin-left: 16px;
+}

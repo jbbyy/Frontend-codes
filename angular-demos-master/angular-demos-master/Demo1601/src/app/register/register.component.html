@@ -1,0 +1,101 @@
+<div class="container">
+  <div class="d-flex justify-content-center">
+    <div>
+      <form [formGroup]="registerForm">
+      <div class="input-group flex-nowrap mb-3" style="width: 300px">
+        <span class="input-group-text" id="addon-wrapping"
+          ><i class="fa-regular fa-user"></i
+        ></span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter First name"
+          aria-label="username"
+          aria-describedby="addon-wrapping"
+          [(ngModel)]="user.firstname"
+          #fname="ngModel"
+          required
+          minlength="4"
+          name="fname"
+          id="fname"
+        />
+      </div>
+       <div
+          class="text-danger"
+          *ngIf="fname.dirty && fname.errors?.['required']">First name is required</div>
+        <div
+          class="text-danger"
+          *ngIf="fname.dirty && fname.errors?.['minlength']">At least 4 characters</div>
+
+      <div class="input-group flex-nowrap" style="width: 300px">
+        <span class="input-group-text" id="addon-wrapping"
+          ><i class="fa-solid fa-user"></i
+        ></span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Last name"
+          aria-label="Username"
+          aria-describedby="addon-wrapping"
+          [(ngModel)]="user.lastname"
+        />
+      </div>
+
+      <div class="input-group flex-nowrap" style="width: 300px">
+        <span class="input-group-text" id="addon-wrapping"
+          ><i class="fa-regular fa-envelope"></i
+        ></span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Email"
+          aria-label="Username"
+          aria-describedby="addon-wrapping"
+          [(ngModel)]="user.email"
+        />
+      </div>
+
+      <div class="input-group flex-nowrap" style="width: 300px">
+        <span class="input-group-text" id="addon-wrapping"
+          ><i class="fa-solid fa-hashtag"></i></span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter age"
+          aria-label="Username"
+          aria-describedby="addon-wrapping"
+          [(ngModel)]="user.age"
+        />
+      </div>
+
+      <div class="input-group flex-nowrap" style="width: 300px">
+        <span class="input-group-text" id="addon-wrapping"
+          ><i class="fa-solid fa-city"></i
+        ></span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter city"
+          aria-label="Username"
+          aria-describedby="addon-wrapping"
+          [(ngModel)]="user.city"
+        />
+      </div>
+      <div class="input-group flex-nowrap" style="width: 300px">
+        <span class="input-group-text" id="addon-wrapping"
+          ><i class="fa-solid fa-lock"></i
+        ></span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Password"
+          aria-label="Username"
+          aria-describedby="addon-wrapping"
+          [(ngModel)]="user.password"
+        />
+      </div>
+      <button class="btn btn-primary mt-3" routerLink="/login">Register</button>
+    </form>
+    </div>
+  </div>
+</div>

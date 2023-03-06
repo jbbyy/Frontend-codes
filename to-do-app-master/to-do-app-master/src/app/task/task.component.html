@@ -1,0 +1,13 @@
+<div class="container mt-3 offset-md-4">
+<ul class="list-group " style ="width:50%" *ngFor ="let x of show; let i = index">
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div style="width:50%">
+      <div class="fw-bold">{{i+1}}- {{x.description}}</div>
+      <span class="float-start">{{x.priority}}</span> 
+      <span class="float-end">{{x.due}}</span>
+    </div>
+    <span class="badge bg-primary rounded-pill" (click)="delete(x.id)">X</span>
+    
+  </li>
+</ul>
+</div>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "author" contents = "Abby">
+    <meta name = "keywords" content ="hotel booking holiday">
+    <!-- meta tag keywords , will be visible on search engine-->>
+</head>
+<body>
+    <form action="">
+    <input type="text" required pattern =[a-zA-Z]{5,10} placeholder ="Enter first name" maxlength = "10"/>
+    <!-- when type = text, will have text field 
+        placeholder = background text inside type
+    -->
+    <input type="password" placeholder="Password" />
+    <input type ="date"/>
+    <input type="range" min="0" max="100" value="10"/> 
+    <!--- value refers to default value-->
+    <input type="color"/>
+
+    <!--checkboxes are always for multiple input. Need to label-->
+    Hobbies 
+    <input id="check1" type="checkbox">
+    <label for="check1">Singing</label>
+
+    <input id = "check2" type="checkbox">
+    <label for="check2">dancing</label>
+
+    <!-- for -> to specify which control we are using label for. Use ID which will be assigned to the tag-->
+    <br>
+    Gender 
+    <input id = "male" type="radio" name = "gender"/>
+    <label for="male">Male</label>
+    <input id ="female" type="radio" name = "gender"/>
+    <label for="female">Female</label>
+<br>
+    <select name="" id="">
+        <option value="">SG</option>
+        <option value="">USA</option>
+        <option value="">IND</option>
+    </select>
+<br>
+
+<input type="button" value ="register user"/>
+<input type="submit" value = "submit"/>
+<input type="reset" value = "clear"/>
+
+    </form>
+
+
+    <div style = "border:2px solid red">This is DIV element</div>
+    <span style ="border:2px solid blue">span1</span>
+    <span>span2</span>
+
+    <!--Semantic elements-->
+    <header>
+<footer>
+</footer>
+
+<nav>
+</nav>
+
+<article>
+</article>
+
+
+
+    </header>
+
+</body>
+</html>

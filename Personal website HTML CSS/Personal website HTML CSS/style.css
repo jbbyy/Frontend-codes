@@ -1,0 +1,66 @@
+.container
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.main{
+    width: 80%;
+    height: 100vh;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    border: 2px solid rgb(141, 132, 132);
+
+}
+
+header{
+    height: 80px;
+    margin-top: 60px;
+}
+header :nth-child(1){
+    padding-right: 60px;
+    text-align: center;
+    font-family: garamond;
+    font-size: xx-large;
+    font-style: bold;
+    
+}
+.text{
+    margin-top: -30px;
+    padding-left: 200px;
+    text-align: center;
+    font-family: garamond;
+}
+
+.uul{
+    text-align: center;
+    list-style-type: none;
+    display: block;
+    padding: 20px;
+    margin-top: 0%;
+    
+
+}
+
+.uul li{
+    display: inline;
+    margin-left: 10px;
+    cursor: pointer; 
+    
+}
+
+.nounderline
+{
+text-decoration: none;
+color: rgb(87, 83, 83);
+
+}
+
+a:hover{
+    color: rgb(119, 90, 211);
+    
+}
+

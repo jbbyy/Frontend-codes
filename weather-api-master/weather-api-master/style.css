@@ -1,0 +1,57 @@
+.image{
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    animation-name:myanim ;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myanim{
+    0%{left:50px}
+    8%{left: 100px;}
+    18%{left: 250px}
+    25%{left: 450px}
+    38%{left: 600px}
+    42%{left: 700px }
+    48%{left: 850px}
+    58%{left: 950px}
+    62%{left: 1100px}
+    75%{left: 950px}
+    78%{left: 850px}
+    85%{left: 700px }
+    90%{left: 600px}
+    95%{left: 450px}
+    100%{left: 250px}
+
+}
+
+.image2{
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    animation-name:myanim2 ;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myanim2{
+    
+    0%{right:50px}
+    8%{right: 100px;}
+    18%{right: 250px}
+    25%{right: 450px}
+    38%{right: 600px}
+    42%{right: 700px }
+    48%{right: 850px}
+    58%{right: 950px}
+    62%{right: 1100px}
+    75%{right: 950px}
+    78%{right:850px}
+    85%{right: 700px }
+    90%{right:600px}
+    95%{right: 450px}
+    100%{right: 250px}
+
+
+}
